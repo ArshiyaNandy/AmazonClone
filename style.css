@@ -227,3 +227,59 @@ ul a{
    
 }
 
+
+/*Responsiveness*/
+
+@media (max-width: 1024px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-search {
+        width: 90%;
+        margin-top: 10px;
+    }
+    .panel-ops {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .shop-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    .nav-search {
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav-signin, .nav-return, .nav-cart {
+        margin-top: 10px;
+        text-align: center;
+    }
+    .shop-section {
+        grid-template-columns: 1fr;
+    }
+    .panel-ops p {
+        margin: 5px;
+    }
+}
+
+/* For very small devices */
+@media (max-width: 480px) {
+    .panel {
+        flex-direction: column;
+        align-items: center;
+    }
+    .shop-section {
+        grid-template-columns: 1fr;
+    }
+    footer .foot-panel2 ul {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
